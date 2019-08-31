@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-usage/api-usage.iml" filepath="$PROJECT_DIR$/api-usage/api-usage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot_mq_consumer/boot_mq_consumer.iml" filepath="$PROJECT_DIR$/boot_mq_consumer/boot_mq_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot_mq_producer/boot_mq_producer.iml" filepath="$PROJECT_DIR$/boot_mq_producer/boot_mq_producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration_spring/integration_spring.iml" filepath="$PROJECT_DIR$/integration_spring/integration_spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-activemq.iml" filepath="$PROJECT_DIR$/study-activemq.iml" />
+    </modules>
+  </component>
+</project>

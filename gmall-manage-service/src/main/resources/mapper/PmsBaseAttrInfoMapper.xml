@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.luch.gmall.manage.mapper.PmsBaseAttrInfoMapper">
+
+    <select id="selAttrInfoByValueId" resultMap="selAttrInfoByValueIdMap">
+        SELECT ai.*,ai.id as ai_id,av.*,av.id as av_id
+        FROM pms_base_attr_info ai,pms_base_attr_value av
+        WHERE ai.id=av.attr_id AND av.id in (${attrValueIdStr})
+    </select>
+
+    <resultMap id="selAttrInfoByValueIdMap" type="com.luch.gmall.bean.PmsBaseAttrInfo" autoMapping="true">
+        <result column="ai_id" property="id"/>
+        <collection property="attrValueList" ofType="com.luch.gmall.bean.PmsBaseAttrValue" autoMapping="true">
+            <result column="av_id" property="id"/>
+        </collection>
+    </resultMap>
+</mapper>

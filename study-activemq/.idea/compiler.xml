@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-usage" />
+        <module name="boot_mq_consumer" />
+        <module name="boot_mq_producer" />
+        <module name="ff" />
+        <module name="integration_spring" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-usage" target="1.8" />
+      <module name="boot_mq_consumer" target="1.8" />
+      <module name="boot_mq_producer" target="1.8" />
+      <module name="ff" target="1.8" />
+      <module name="integration-spring" target="1.8" />
+      <module name="integration_spring" target="1.8" />
+      <module name="spring_integration" target="1.8" />
+      <module name="study-activemq" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

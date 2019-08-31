@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.luch</groupId>
+		<artifactId>gmall-parent</artifactId>
+		<version>1.0</version>
+	</parent>
+
+
+	<artifactId>gmall-item-web</artifactId>
+	<name>gmall-item-web</name>
+	<description>Demo project for Spring Boot</description>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>com.luch</groupId>
+			<artifactId>gmall-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.luch</groupId>
+			<artifactId>gmall-web-util</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<!-- thymeleaf支持包、可以设置松校验、热部署 -->
+		<dependency>
+			<groupId>net.sourceforge.nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-ext</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
